@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CHUM SCRCPY - Điều khiển Android từ trình duyệt web">
+    <meta name="theme-color" content="#1a1d21">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="CHUM SCRCPY">
+    
+    <link rel="icon" href="/scrcpy/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="/scrcpy/assets/android-chrome-192x192-I4cTwzoz.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./src/assets/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" href="/scrcpy/assets/android-chrome-192x192-I4cTwzoz.png">
+    <link rel="manifest" href="/scrcpy/assets/site-q3NFbExB.webmanifest">
+    
+    <title>CHUM SCRCPY</title>
+    <script type="module" crossorigin src="/scrcpy/assets/index-BdS8x7us.js"></script>
+    <link rel="stylesheet" crossorigin href="/scrcpy/assets/index-CHAEy7sp.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js').catch(() => {});
+        });
+      }
+    </script>
+  </body>
+</html>

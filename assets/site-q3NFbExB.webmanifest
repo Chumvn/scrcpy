@@ -1,0 +1,25 @@
+{
+  "name": "CHUM SCRCPY",
+  "short_name": "CHUM SCRCPY",
+  "description": "Điều khiển Android từ trình duyệt web",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#1a1d21",
+  "background_color": "#1a1d21",
+  "icons": [
+    {
+      "src": "./src/assets/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./src/assets/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
